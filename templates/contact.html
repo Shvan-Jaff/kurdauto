@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Contact KurdAuto</h1>
+<div class="row">
+    <div class="col-md-6">
+        <form method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+    <div class="col-md-6">
+        <h2>Visit Us</h2>
+        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Auto Street, Erbil, Kurdistan</p>
+        <p><i class="fas fa-phone me-2"></i> +964 750 123 4567</p>
+        <p><i class="fas fa-envelope me-2"></i> info@kurdauto.com</p>
+        
+        <h2 class="mt-4">Business Hours</h2>
+        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+        <p>Saturday: 10:00 AM - 4:00 PM</p>
+        <p>Sunday: Closed</p>
+    </div>
+</div>
+{% endblock %}

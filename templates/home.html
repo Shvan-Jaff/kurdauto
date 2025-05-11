@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="hero-section mb-5">
+    <div class="hero-content">
+        <h1 class="display-4">Welcome to KurdAuto</h1>
+        <p class="lead">Your trusted partner for quality vehicles</p>
+        <a href="{% url 'cars' %}" class="btn btn-primary btn-lg mt-3">Browse Cars</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Luxury Cars">
+            <div class="card-body">
+                <h5 class="card-title">Luxury Selection</h5>
+                <p class="card-text">Discover our premium collection of luxury vehicles for the discerning driver.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Affordable Cars">
+            <div class="card-body">
+                <h5 class="card-title">Affordable Options</h5>
+                <p class="card-text">Quality vehicles at prices that won't break the bank.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Family Cars">
+            <div class="card-body">
+                <h5 class="card-title">Family Vehicles</h5>
+                <p class="card-text">Safe and reliable transportation for your whole family.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
